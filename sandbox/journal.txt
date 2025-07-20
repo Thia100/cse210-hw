@@ -1,0 +1,3 @@
+This will be the first line in the file.
+My favorite color is Blue
+My favorite color is Blue
