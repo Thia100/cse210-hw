@@ -160,7 +160,7 @@ public class GoalManager
                     int targetAmount = int.Parse(Console.ReadLine());
                     Console.Write("What is the unit of measurement? (pages, miles, hours, etc.): ");
                     string unit = Console.ReadLine();
-                    // newGoal = new ProgressGoal(name, description, points, targetAmount, unit, category, difficulty);
+                    
                     break;
                 default:
                     Console.WriteLine("Invalid choice.");
@@ -256,7 +256,7 @@ public class GoalManager
             .Select(group => new { Category = group.Key, Count = group.Count() })
             .OrderByDescending(x => x.Count);
             
-            Console.WriteLine("📋 Goals by Category:");
+            Console.WriteLine("Goals by Category:");
             foreach (var stat in categoryStats)
             {
                 Console.WriteLine($"   {stat.Category}: {stat.Count} goals");
